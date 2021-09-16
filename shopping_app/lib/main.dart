@@ -12,6 +12,7 @@ void main() {
     ),
     initialRoute: '/',
     routes: {ProductDetailScreen.routName: (ctx) => ProductDetailScreen()},
+    
     home: ProductverviewScreen(),
   ));
 }
