@@ -3,12 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:shopping_app/providers/products_providers.dart';
 import 'package:shopping_app/widgets/app_drawer.dart';
 import 'package:shopping_app/widgets/user_product_item.dart';
-
 import 'edit_product_screen.dart';
-// import 'package:shop_app/providers/products_providers.dart';
-// import 'package:shop_app/screens/edit_product_screen.dart';
-// import 'package:shop_app/widgets/app_drawer.dart';
-// import 'package:shop_app/widgets/user_product_item.dart';
 
 class UserProductsScreen extends StatelessWidget {
   static const routeName = '/userProduct';
@@ -36,8 +31,11 @@ class UserProductsScreen extends StatelessWidget {
             children: [
               UserProductItem(
                   title: productData.items[index].title,
-                  imageUrl: productData.items[index].imageUrl),
-              Divider(),
+                  imageUrl: productData.items[index].imageUrl,
+                  id: productData.items[index].imageUrl,
+
+              ),
+
             ],
           ),
         ),
