@@ -3,9 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:shopping_app/providers/cart.dart';
 import 'package:shopping_app/providers/product.dart';
 import 'package:shopping_app/screens/product_details_screen.dart';
-// import 'package:shop_app/providers/cart.dart';
-// import 'package:shop_app/providers/product.dart';
-// import 'package:shop_app/screens/product_details_screen.dart';
 
 class ProductItem extends StatelessWidget {
   @override
@@ -51,8 +48,8 @@ class ProductItem extends StatelessWidget {
             icon: Icon(Icons.shopping_cart),
             onPressed: () {
               cart.addItem(product.id, product.price, product.title);
-              Scaffold.of(context).hideCurrentSnackBar();
-              Scaffold.of(context).showSnackBar(
+              ScaffoldMessenger.of(context).hideCurrentSnackBar();
+              ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Added item to card!'),
                   duration: Duration(seconds: 2),
