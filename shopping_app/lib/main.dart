@@ -9,16 +9,6 @@ import 'package:shopping_app/screens/order_screen.dart';
 import 'package:shopping_app/screens/product_details_screen.dart';
 import 'package:shopping_app/screens/product_overview_screen.dart';
 import 'package:shopping_app/screens/user_product_screen.dart';
-// import 'package:shop_app/providers/cart.dart';
-// import 'package:shop_app/providers/orders.dart';
-// import 'package:shop_app/providers/products_providers.dart';
-// import 'package:shop_app/screens/cart_screen.dart';
-// import 'package:shop_app/screens/edit_product_screen.dart';
-// import 'package:shop_app/screens/order_screen.dart';
-// import 'package:shop_app/screens/product_details_screen.dart';
-// import 'package:shop_app/screens/product_overview_screen.dart';
-// import 'package:provider/provider.dart';
-// import 'package:shop_app/screens/user_product_screen.dart';
 
 void main() {
   runApp(MyHomePage());
@@ -40,7 +30,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'My Shopping App',
+        title: 'My Shop',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.cyan,
