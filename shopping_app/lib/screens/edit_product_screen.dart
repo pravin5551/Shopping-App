@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/product.dart';
 import '../providers/products_providers.dart';
-
+//edit_product_screen.dart
 class EditProductScreen extends StatefulWidget {
   static const routeName = '/editScreen';
   @override
